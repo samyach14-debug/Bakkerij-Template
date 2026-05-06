@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Bakkerij De Gouden Korst</title>
-  <meta name="description" content="Neem contact op met Bakkerij De Gouden Korst in Utrecht. Bekijk openingstijden, adresgegevens en stuur eenvoudig een bericht." />
+  <meta name="description" content="Neem contact op met Bakkerij De Gouden Korst. Bekijk openingstijden, adres, stuur een bericht of neem direct contact op via WhatsApp of telefoon." />
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/main.js"></script>
 </head>
@@ -18,7 +18,6 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="assortiment.html">Assortiment</a></li>
           <li><a href="over-ons.html">Over ons</a></li>
-          <li><a href="bestellen.html">Bestellen</a></li>
           <li><a class="active" href="contact.html">Contact</a></li>
         </ul>
       </nav>
@@ -28,47 +27,49 @@
   <main class="page-main">
     <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">Wij helpen je graag</p>
-        <h1>Contact</h1>
-        <p>Loop binnen in de winkel of stuur ons een bericht.</p>
+        <p class="eyebrow">Wij staan voor je klaar</p>
+        <h1>Contact met De Gouden Korst</h1>
+        <p>Voor vragen, bestellingen en taarten op maat.</p>
       </div>
     </section>
 
     <section class="section">
       <div class="container contact-grid">
-        <div>
+        <article class="info-card">
           <h2>Contactgegevens</h2>
           <p><strong>Adres:</strong> Oudegracht 123, 3511 AL Utrecht</p>
-          <p><strong>Telefoon:</strong> 030 - 123 45 67</p>
-          <p><strong>E-mail:</strong> info@degoudenkorst.nl</p>
+          <p><strong>Telefoon:</strong> <a href="tel:+31301234567">030 - 123 45 67</a></p>
+          <p><strong>E-mail:</strong> <a href="mailto:info@degoudenkorst.nl">info@degoudenkorst.nl</a></p>
 
           <h3>Openingstijden</h3>
           <ul class="feature-list">
-            <li>Maandag: 07:00 - 18:00</li>
-            <li>Dinsdag: 07:00 - 18:00</li>
-            <li>Woensdag: 07:00 - 18:00</li>
-            <li>Donderdag: 07:00 - 18:00</li>
-            <li>Vrijdag: 07:00 - 18:00</li>
+            <li>Maandag t/m vrijdag: 07:00 - 18:00</li>
             <li>Zaterdag: 07:00 - 17:00</li>
             <li>Zondag: Gesloten</li>
           </ul>
-        </div>
+
+          <div class="inline-cta">
+            <a class="btn btn-primary" href="https://wa.me/31612345678" target="_blank" rel="noopener">WhatsApp</a>
+            <a class="btn btn-secondary" href="tel:+31301234567">Bel de bakkerij</a>
+          </div>
+        </article>
 
         <form class="contact-form" action="#" method="post">
-          <h2>Stuur een bericht</h2>
-          <label for="c-naam">Naam</label>
-          <input id="c-naam" type="text" name="naam" required />
+          <h2>Stuur ons een bericht</h2>
+          <label for="naam">Naam</label>
+          <input id="naam" name="naam" type="text" required />
 
-          <label for="c-email">E-mailadres</label>
-          <input id="c-email" type="email" name="email" required />
+          <label for="email">E-mailadres</label>
+          <input id="email" name="email" type="email" required />
 
-          <label for="c-onderwerp">Onderwerp</label>
-          <input id="c-onderwerp" type="text" name="onderwerp" required />
+          <label for="onderwerp">Onderwerp</label>
+          <input id="onderwerp" name="onderwerp" type="text" required />
 
-          <label for="c-bericht">Bericht</label>
-          <textarea id="c-bericht" name="bericht" rows="5" required></textarea>
+          <label for="bericht">Bericht</label>
+          <textarea id="bericht" name="bericht" rows="5" required></textarea>
 
           <button class="btn btn-primary" type="submit">Verstuur bericht</button>
+          <p class="form-note">We reageren meestal binnen 1 werkdag.</p>
         </form>
       </div>
     </section>
@@ -76,8 +77,9 @@
     <section class="section section-soft">
       <div class="container">
         <h2>Locatie</h2>
-        <div class="map-placeholder">
-          Google Maps placeholder (plaats hier later een iframe met de echte locatie)
+        <div class="map-placeholder" role="img" aria-label="Placeholder voor Google Maps met locatie van Bakkerij De Gouden Korst in Utrecht">
+          Google Maps placeholder<br />
+          (vervang later met een iframe van de echte locatie)
         </div>
       </div>
     </section>
@@ -87,9 +89,9 @@
 
   <footer class="site-footer">
     <div class="container footer-grid">
-      <div><h3>Bakkerij De Gouden Korst</h3><p>Utrecht, Nederland</p></div>
-      <div><h4>Navigatie</h4><ul><li><a href="index.html">Home</a></li><li><a href="assortiment.html">Assortiment</a></li></ul></div>
-      <div><h4>Contact</h4><p>info@degoudenkorst.nl</p></div>
+      <div><h3>Bakkerij De Gouden Korst</h3><p>Oudegracht 123, Utrecht</p></div>
+      <div><h4>Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="assortiment.html">Assortiment</a></li><li><a href="over-ons.html">Over ons</a></li></ul></div>
+      <div><h4>Contact</h4><p><a href="mailto:info@degoudenkorst.nl">info@degoudenkorst.nl</a></p><p><a href="tel:+31301234567">030 - 123 45 67</a></p></div>
     </div>
   </footer>
 </body>
