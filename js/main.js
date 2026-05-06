@@ -1,13 +1,12 @@
 document.addEventListener("DOMContentLoaded", () => {
   initMobileNav();
   initFaq();
-  initFormFeedback();
+  initForms();
 });
 
 function initMobileNav() {
   const toggle = document.querySelector(".nav-toggle");
   const nav = document.querySelector(".site-nav");
-
   if (!toggle || !nav) return;
 
   toggle.addEventListener("click", () => {
@@ -27,25 +26,25 @@ function initFaq() {
   const questions = document.querySelectorAll(".faq-question");
   if (!questions.length) return;
 
-  questions.forEach((btn) => {
-    btn.addEventListener("click", () => {
-      const item = btn.closest(".faq-item");
-      const expanded = btn.getAttribute("aria-expanded") === "true";
+  questions.forEach((button) => {
+    button.addEventListener("click", () => {
+      const item = button.closest(".faq-item");
+      const isExpanded = button.getAttribute("aria-expanded") === "true";
 
-      btn.setAttribute("aria-expanded", String(!expanded));
+      button.setAttribute("aria-expanded", String(!isExpanded));
       item.classList.toggle("open");
     });
   });
 }
 
-function initFormFeedback() {
+function initForms() {
   const forms = document.querySelectorAll("form");
   if (!forms.length) return;
 
   forms.forEach((form) => {
-    form.addEventListener("submit", (e) => {
-      e.preventDefault();
-      alert("Bedankt! Je aanvraag is ontvangen. We nemen snel contact met je op.");
+    form.addEventListener("submit", (event) => {
+      event.preventDefault();
+      alert("Bedankt! We hebben je bericht ontvangen en nemen snel contact op.");
       form.reset();
     });
   });
