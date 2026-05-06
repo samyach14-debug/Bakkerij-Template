@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact | Bakkerij De Gouden Korst</title>
+  <meta name="description" content="Neem contact op met Bakkerij De Gouden Korst in Utrecht. Bekijk openingstijden, adresgegevens en stuur eenvoudig een bericht." />
+  <link rel="stylesheet" href="css/style.css" />
+  <script defer src="js/main.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container nav-wrap">
+      <a href="index.html" class="logo">De Gouden Korst</a>
+      <button class="nav-toggle" aria-label="Open navigatie" aria-expanded="false"><span></span><span></span><span></span></button>
+      <nav class="site-nav" aria-label="Hoofdnavigatie">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="assortiment.html">Assortiment</a></li>
+          <li><a href="over-ons.html">Over ons</a></li>
+          <li><a href="bestellen.html">Bestellen</a></li>
+          <li><a class="active" href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page-main">
+    <section class="page-hero">
+      <div class="container">
+        <p class="eyebrow">Wij helpen je graag</p>
+        <h1>Contact</h1>
+        <p>Loop binnen in de winkel of stuur ons een bericht.</p>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container contact-grid">
+        <div>
+          <h2>Contactgegevens</h2>
+          <p><strong>Adres:</strong> Oudegracht 123, 3511 AL Utrecht</p>
+          <p><strong>Telefoon:</strong> 030 - 123 45 67</p>
+          <p><strong>E-mail:</strong> info@degoudenkorst.nl</p>
+
+          <h3>Openingstijden</h3>
+          <ul class="feature-list">
+            <li>Maandag: 07:00 - 18:00</li>
+            <li>Dinsdag: 07:00 - 18:00</li>
+            <li>Woensdag: 07:00 - 18:00</li>
+            <li>Donderdag: 07:00 - 18:00</li>
+            <li>Vrijdag: 07:00 - 18:00</li>
+            <li>Zaterdag: 07:00 - 17:00</li>
+            <li>Zondag: Gesloten</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+          <h2>Stuur een bericht</h2>
+          <label for="c-naam">Naam</label>
+          <input id="c-naam" type="text" name="naam" required />
+
+          <label for="c-email">E-mailadres</label>
+          <input id="c-email" type="email" name="email" required />
+
+          <label for="c-onderwerp">Onderwerp</label>
+          <input id="c-onderwerp" type="text" name="onderwerp" required />
+
+          <label for="c-bericht">Bericht</label>
+          <textarea id="c-bericht" name="bericht" rows="5" required></textarea>
+
+          <button class="btn btn-primary" type="submit">Verstuur bericht</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section-soft">
+      <div class="container">
+        <h2>Locatie</h2>
+        <div class="map-placeholder">
+          Google Maps placeholder (plaats hier later een iframe met de echte locatie)
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <a class="whatsapp-btn" href="https://wa.me/31612345678" target="_blank" rel="noopener">WhatsApp</a>
+
+  <footer class="site-footer">
+    <div class="container footer-grid">
+      <div><h3>Bakkerij De Gouden Korst</h3><p>Utrecht, Nederland</p></div>
+      <div><h4>Navigatie</h4><ul><li><a href="index.html">Home</a></li><li><a href="assortiment.html">Assortiment</a></li></ul></div>
+      <div><h4>Contact</h4><p>info@degoudenkorst.nl</p></div>
+    </div>
+  </footer>
+</body>
+</html>
