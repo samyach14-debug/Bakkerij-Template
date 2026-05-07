@@ -228,11 +228,22 @@ background: #F7E8D0;
 .contact-info-card,
 .contact-form-card,
 .cta-panel,
+.map-section {
+  padding-top: 2rem;
+}
+
 .map-card {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: var(--radius);
-  box-shadow: var(--shadow);
+  overflow: hidden;
+  border-radius: 24px;
+  border: 1px solid rgba(90, 55, 28, 0.12);
+  box-shadow: 0 16px 40px rgba(90, 55, 28, 0.12);
+  background: #fffaf2;
+}
+
+.map-card iframe {
+  display: block;
+  width: 100%;
+  min-height: 360px;
 }
 
 .product-card {
@@ -426,9 +437,6 @@ background: #F7E8D0;
   outline-offset: 1px;
 }
 
-.map-card {
-  padding: 1.2rem;
-}
 
 /* Footer */
 .site-footer {
