@@ -193,9 +193,9 @@ h3 { font-size: 1.15rem; }
 .btn-primary:hover { background: var(--accent-dark); }
 
 .btn-secondary {
-  background: transparent;
-  color: var(--text);
-  border-color: var(--accent);
+background: #F7E8D0;
+  color: #4B2E1E;
+  border: 1px solid #D8B98A;
 }
 
 .btn-secondary:hover { background: #f2e3d0; }
