@@ -43,10 +43,9 @@ function initFormFeedback() {
   if (!forms.length) return;
 
   forms.forEach((form) => {
-    form.addEventListener("submit", (event) => {
-      event.preventDefault();
-      alert("Bedankt! We hebben je bericht ontvangen en nemen snel contact met je op.");
-      form.reset();
+    form.addEventListener("submit", () => {
+      // Laat de normale Formspree submit doorgaan.
+      // Geen preventDefault gebruiken.
     });
   });
 }
