@@ -4,7 +4,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Bakkerij De Gouden Korst</title>
-  <meta name="description" content="Neem contact op met Bakkerij De Gouden Korst. Bekijk openingstijden, adres, stuur een bericht of neem direct contact op via WhatsApp of telefoon." />
+  <meta name="description" content="Neem contact op met Bakkerij De Gouden Korst. Bekijk openingstijden, adres en stuur eenvoudig een bericht." />
   <link rel="stylesheet" href="css/style.css" />
   <script defer src="js/main.js"></script>
 </head>
@@ -12,7 +12,9 @@
   <header class="site-header">
     <div class="container nav-wrap">
       <a href="index.html" class="logo">De Gouden Korst</a>
-      <button class="nav-toggle" aria-label="Open navigatie" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="nav-toggle" aria-label="Open navigatie" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
       <nav class="site-nav" aria-label="Hoofdnavigatie">
         <ul>
           <li><a href="index.html">Home</a></li>
@@ -27,15 +29,16 @@
   <main class="page-main">
     <section class="page-hero">
       <div class="container">
-        <p class="eyebrow">Wij staan voor je klaar</p>
-        <h1>Contact met De Gouden Korst</h1>
-        <p>Voor vragen, bestellingen en taarten op maat.</p>
+        <p class="eyebrow">Direct contact</p>
+        <h1>We helpen je graag verder</h1>
+        <p>Voor vragen, maatwerk en zakelijke aanvragen staan we voor je klaar.</p>
       </div>
     </section>
 
     <section class="section">
-      <div class="container contact-grid">
-        <article class="info-card">
+      <div class="container split contact-split">
+        <aside class="contact-info-card">
+          <img src="Images/bakkerij-interieur.avif" alt="Sfeerbeeld van de bakkerij met warme inrichting" class="contact-image" />
           <h2>Contactgegevens</h2>
           <p><strong>Adres:</strong> Oudegracht 123, 3511 AL Utrecht</p>
           <p><strong>Telefoon:</strong> <a href="tel:+31301234567">030 - 123 45 67</a></p>
@@ -48,38 +51,35 @@
             <li>Zondag: Gesloten</li>
           </ul>
 
-          <div class="inline-cta">
-            <a class="btn btn-primary" href="https://wa.me/31612345678" target="_blank" rel="noopener">WhatsApp</a>
-            <a class="btn btn-secondary" href="tel:+31301234567">Bel de bakkerij</a>
-          </div>
-        </article>
+          <a class="btn btn-secondary" href="https://wa.me/31612345678" target="_blank" rel="noopener">WhatsApp</a>
+        </aside>
 
-        <form class="contact-form" action="#" method="post">
+        <section class="contact-form-card">
           <h2>Stuur ons een bericht</h2>
-          <label for="naam">Naam</label>
-          <input id="naam" name="naam" type="text" required />
+          <form action="#" method="post" class="contact-form">
+            <label for="naam">Naam</label>
+            <input id="naam" name="naam" type="text" required />
 
-          <label for="email">E-mailadres</label>
-          <input id="email" name="email" type="email" required />
+            <label for="email">E-mailadres</label>
+            <input id="email" name="email" type="email" required />
 
-          <label for="onderwerp">Onderwerp</label>
-          <input id="onderwerp" name="onderwerp" type="text" required />
+            <label for="onderwerp">Onderwerp</label>
+            <input id="onderwerp" name="onderwerp" type="text" required />
 
-          <label for="bericht">Bericht</label>
-          <textarea id="bericht" name="bericht" rows="5" required></textarea>
+            <label for="bericht">Bericht</label>
+            <textarea id="bericht" name="bericht" rows="6" required></textarea>
 
-          <button class="btn btn-primary" type="submit">Verstuur bericht</button>
-          <p class="form-note">We reageren meestal binnen 1 werkdag.</p>
-        </form>
+            <button class="btn btn-primary" type="submit">Verstuur bericht</button>
+          </form>
+        </section>
       </div>
     </section>
 
     <section class="section section-soft">
       <div class="container">
-        <h2>Locatie</h2>
-        <div class="map-placeholder" role="img" aria-label="Placeholder voor Google Maps met locatie van Bakkerij De Gouden Korst in Utrecht">
-          Google Maps placeholder<br />
-          (vervang later met een iframe van de echte locatie)
+        <div class="map-card">
+          <h2>Kaartweergave van de locatie</h2>
+          <p>Hier wordt de Google Maps kaart geplaatst zodra de definitieve locatie bekend is.</p>
         </div>
       </div>
     </section>
@@ -90,8 +90,16 @@
   <footer class="site-footer">
     <div class="container footer-grid">
       <div><h3>Bakkerij De Gouden Korst</h3><p>Oudegracht 123, Utrecht</p></div>
-      <div><h4>Links</h4><ul><li><a href="index.html">Home</a></li><li><a href="assortiment.html">Assortiment</a></li><li><a href="over-ons.html">Over ons</a></li></ul></div>
-      <div><h4>Contact</h4><p><a href="mailto:info@degoudenkorst.nl">info@degoudenkorst.nl</a></p><p><a href="tel:+31301234567">030 - 123 45 67</a></p></div>
+      <div>
+        <h4>Navigatie</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="assortiment.html">Assortiment</a></li>
+          <li><a href="over-ons.html">Over ons</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div><h4>Contact</h4><p><a href="tel:+31301234567">030 - 123 45 67</a></p></div>
     </div>
   </footer>
 </body>
