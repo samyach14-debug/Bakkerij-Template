@@ -320,15 +320,69 @@ h3 { font-size: 1.15rem; }
 }
 
 .timeline {
-  display: grid;
-  gap: 0.8rem;
+  position: relative;
+  margin-top: 2rem;
+  padding-left: 2rem;
 }
 
-.timeline article {
-  background: var(--card);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-sm);
-  padding: 0.85rem 1rem;
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.55rem;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #c89b5e;
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.timeline-marker {
+  position: absolute;
+  left: -2rem;
+  top: 0.4rem;
+  width: 1rem;
+  height: 1rem;
+  background: #c89b5e;
+  border: 3px solid #fff7ed;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(200, 155, 94, 0.2);
+}
+
+.timeline-content {
+  background: #fffaf2;
+  border: 1px solid rgba(90, 55, 28, 0.12);
+  border-radius: 18px;
+  padding: 1.25rem;
+  box-shadow: 0 10px 30px rgba(90, 55, 28, 0.08);
+}
+
+.timeline-year {
+  display: inline-block;
+  margin-bottom: 0.4rem;
+  color: #9a6a32;
+  font-weight: 700;
+}
+
+.timeline-content h3 {
+  margin: 0 0 0.5rem;
+}
+
+.timeline-content p {
+  margin: 0;
+}
+
+@media (max-width: 700px) {
+  .timeline {
+    padding-left: 1.5rem;
+  }
+
+  .timeline-marker {
+    left: -1.5rem;
+  }
 }
 
 .contact-info-card,
