@@ -1,50 +1,51 @@
 document.addEventListener("DOMContentLoaded", () => {
-  initMobileNav();
+  initMobileMenu();
   initFaq();
-  initForms();
+  initFormFeedback();
 });
 
-function initMobileNav() {
-  const toggle = document.querySelector(".nav-toggle");
-  const nav = document.querySelector(".site-nav");
-  if (!toggle || !nav) return;
+function initMobileMenu() {
+  const navToggle = document.querySelector(".nav-toggle");
+  const siteNav = document.querySelector(".site-nav");
 
-  toggle.addEventListener("click", () => {
-    const isOpen = nav.classList.toggle("open");
-    toggle.setAttribute("aria-expanded", String(isOpen));
+  if (!navToggle || !siteNav) return;
+
+  navToggle.addEventListener("click", () => {
+    const isOpen = siteNav.classList.toggle("open");
+    navToggle.setAttribute("aria-expanded", String(isOpen));
   });
 
-  nav.querySelectorAll("a").forEach((link) => {
+  siteNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
-      nav.classList.remove("open");
-      toggle.setAttribute("aria-expanded", "false");
+      siteNav.classList.remove("open");
+      navToggle.setAttribute("aria-expanded", "false");
     });
   });
 }
 
 function initFaq() {
-  const questions = document.querySelectorAll(".faq-question");
-  if (!questions.length) return;
+  const faqButtons = document.querySelectorAll(".faq-question");
+  if (!faqButtons.length) return;
 
-  questions.forEach((button) => {
+  faqButtons.forEach((button) => {
     button.addEventListener("click", () => {
-      const item = button.closest(".faq-item");
-      const isExpanded = button.getAttribute("aria-expanded") === "true";
+      const faqItem = button.closest(".faq-item");
+      const expanded = button.getAttribute("aria-expanded") === "true";
 
-      button.setAttribute("aria-expanded", String(!isExpanded));
-      item.classList.toggle("open");
+      button.setAttribute("aria-expanded", String(!expanded));
+      faqItem.classList.toggle("open");
     });
   });
 }
 
-function initForms() {
+function initFormFeedback() {
   const forms = document.querySelectorAll("form");
   if (!forms.length) return;
 
   forms.forEach((form) => {
     form.addEventListener("submit", (event) => {
       event.preventDefault();
-      alert("Bedankt! We hebben je bericht ontvangen en nemen snel contact op.");
+      alert("Bedankt! We hebben je bericht ontvangen en nemen snel contact met je op.");
       form.reset();
     });
   });
