@@ -198,7 +198,8 @@ background: #F7E8D0;
   border: 1px solid #D8B98A;
 }
 
-.btn-secondary:hover { background: #f2e3d0; }
+.btn-secondary:hover { background: var(--accent-dark); }
+
 
 .text-link {
   text-decoration: none;
