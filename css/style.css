@@ -273,7 +273,11 @@ background: #F7E8D0;
 
 .benefit-card,
 .value-card {
-  padding: 1rem;
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: var(--radius);
+  padding: 1.2rem;
+  box-shadow: var(--shadow);
 }
 
 .cta-panel {
