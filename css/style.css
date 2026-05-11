@@ -232,18 +232,20 @@ background: #F7E8D0;
   padding-top: 2rem;
 }
 
+.map-heading {
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
 .map-card {
+  width: 100%;
+  border-radius: 0;
   overflow: hidden;
-  border-radius: 24px;
-  border: 1px solid rgba(90, 55, 28, 0.12);
-  box-shadow: 0 16px 40px rgba(90, 55, 28, 0.12);
-  background: #fffaf2;
 }
 
 .map-card iframe {
-  display: block;
   width: 100%;
-  min-height: 360px;
+  display: block;
 }
 
 .product-card {
