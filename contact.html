@@ -26,103 +26,98 @@
     </div>
   </header>
 
-  <main class="page-main">
-    <section class="page-hero">
-      <div class="container">
-        <p class="eyebrow">Direct contact</p>
-        <h1>We helpen je graag verder</h1>
-        <p>Voor vragen, maatwerk en zakelijke aanvragen staan we voor je klaar.</p>
-      </div>
-    </section>
+<main class="page-main">
+  <section class="page-hero contact-hero">
+    <div class="container contact-hero-inner">
+      <p class="eyebrow">Direct contact</p>
+      <h1>We helpen je graag verder</h1>
+      <p>Voor vragen, maatwerk en zakelijke aanvragen staan we voor je klaar.</p>
+    </div>
+  </section>
 
-    <section class="section">
-      <div class="container split contact-split">
-        <aside class="contact-info-card">
-          <img src="Images/bakkerij-interieur.avif" alt="Sfeerbeeld van de bakkerij met warme inrichting" class="contact-image" />
-          <h2>Contactgegevens</h2>
-          <p><strong>Adres:</strong> Oudegracht 123, 3511 AL Utrecht</p>
-          <p><strong>Telefoon:</strong> <a href="tel:+31301234567">030 - 123 45 67</a></p>
-          <p><strong>E-mail:</strong> <a href="mailto:info@degoudenkorst.nl">info@degoudenkorst.nl</a></p>
+  <section class="section contact-section">
+    <div class="container split contact-split">
+      <aside class="contact-info-card">
+        <img
+          src="Images/bakkerij-interieur.avif"
+          alt="Sfeerbeeld van de bakkerij met warme inrichting"
+          class="contact-image"
+        />
 
-          <h3>Openingstijden</h3>
-          <ul class="feature-list">
-            <li>Maandag t/m vrijdag: 07:00 - 18:00</li>
-            <li>Zaterdag: 07:00 - 17:00</li>
-            <li>Zondag: Gesloten</li>
-          </ul>
+        <h2>Contactgegevens</h2>
 
-          <a class="btn btn-secondary" href="https://wa.me/31612345678" target="_blank" rel="noopener">WhatsApp</a>
-        </aside>
+        <div class="contact-list">
+          <p><span class="contact-label">Adres</span>Oudegracht 123, 3511 AL Utrecht</p>
+          <p><span class="contact-label">Telefoon</span>030 - 123 45 67</p>
+          <p><span class="contact-label">E-mail</span>info@degoudenkorst.nl</p>
+        </div>
 
-<form class="contact-form" action="https://formspree.io/f/mlgzwryz" method="POST">
-  <div class="form-group">
-    <label for="naam">Naam</label>
-    <input 
-      type="text" 
-      id="naam" 
-      name="naam" 
-      placeholder="Uw naam" 
-      required
-    >
-  </div>
+        <h3>Openingstijden</h3>
+        <ul class="feature-list opening-list">
+          <li>Maandag t/m vrijdag: 07:00 - 18:00</li>
+          <li>Zaterdag: 07:00 - 17:00</li>
+          <li>Zondag: Gesloten</li>
+        </ul>
 
-  <div class="form-group">
-    <label for="email">E-mailadres</label>
-    <input 
-      type="email" 
-      id="email" 
-      name="email" 
-      placeholder="uwnaam@email.nl" 
-      required
-    >
-  </div>
+        <a class="btn btn-secondary whatsapp-inline" href="https://wa.me/31612345678" target="_blank" rel="noopener">
+          Stuur een WhatsApp
+        </a>
+      </aside>
 
-  <div class="form-group">
-    <label for="telefoon">Telefoonnummer</label>
-    <input 
-      type="tel" 
-      id="telefoon" 
-      name="telefoon" 
-      placeholder="06 12 34 56 78"
-    >
-  </div>
+      <section class="contact-form-card">
+        <h2>Stuur ons een bericht</h2>
 
-  <div class="form-group">
-    <label for="onderwerp">Onderwerp</label>
-    <input 
-      type="text" 
-      id="onderwerp" 
-      name="onderwerp" 
-      placeholder="Bijvoorbeeld: taart op maat of grote bestelling"
-      required
-    >
-  </div>
+        <form class="contact-form" action="https://formspree.io/f/mlgzwryz" method="POST">
+          <div class="form-group">
+            <label for="naam">Naam</label>
+            <input type="text" id="naam" name="naam" placeholder="Uw naam" required />
+          </div>
 
-  <div class="form-group">
-    <label for="bericht">Bericht</label>
-    <textarea 
-      id="bericht" 
-      name="bericht" 
-      rows="6" 
-      placeholder="Schrijf hier uw bericht..."
-      required
-    ></textarea>
-  </div>
+          <div class="form-group">
+            <label for="email">E-mailadres</label>
+            <input type="email" id="email" name="email" placeholder="uwnaam@email.nl" required />
+          </div>
 
-  <input type="hidden" name="_subject" value="Nieuw bericht via Bakkerij De Gouden Korst">
+          <div class="form-group">
+            <label for="telefoon">Telefoonnummer</label>
+            <input type="tel" id="telefoon" name="telefoon" placeholder="06 12 34 56 78" />
+          </div>
 
-  <button type="submit" class="btn btn-primary form-submit">
-    Verstuur bericht
-  </button>
+          <div class="form-group">
+            <label for="onderwerp">Onderwerp</label>
+            <input
+              type="text"
+              id="onderwerp"
+              name="onderwerp"
+              placeholder="Bijvoorbeeld: taart op maat of grote bestelling"
+              required
+            />
+          </div>
 
-  <p class="form-note">
-    Wij nemen meestal binnen één werkdag contact met u op.
-  </p>
-</form>
+          <div class="form-group">
+            <label for="bericht">Bericht</label>
+            <textarea
+              id="bericht"
+              name="bericht"
+              rows="6"
+              placeholder="Schrijf hier uw bericht..."
+              required
+            ></textarea>
+          </div>
 
-            </div>
-  </div>
-</section>
+          <input type="hidden" name="_subject" value="Nieuw bericht via Bakkerij De Gouden Korst" />
+
+          <button type="submit" class="btn btn-primary form-submit">
+            Verstuur bericht
+          </button>
+
+          <p class="form-note">
+            Wij nemen meestal binnen één werkdag contact met u op.
+          </p>
+        </form>
+      </section>
+    </div>
+  </section>
 <section class="section map-section">
   <div class="container">
 
