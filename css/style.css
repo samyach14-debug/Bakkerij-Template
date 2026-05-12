@@ -861,3 +861,170 @@ background: #F7E8D0;
     padding: 0.9rem 0.9rem 1rem;
   }
 }
+/* ===== Homepage: productcards gelijk aan assortimentpagina ===== */
+.home-products .section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.2rem;
+}
+
+.home-products .text-link {
+  color: var(--accent-dark);
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.home-products .text-link:hover {
+  text-decoration: underline;
+}
+
+.home-products .assortiment-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.home-products .assortiment-card {
+  background: #fffdf9;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(56, 36, 23, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.home-products .assortiment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(56, 36, 23, 0.12);
+}
+
+.home-products .assortiment-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+  border-radius: 16px 16px 0 0;
+}
+
+.home-products .assortiment-card-body {
+  padding: 0.95rem 1rem 1.05rem;
+  text-align: left;
+}
+
+.home-products .product-label {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7a522c;
+  background: #f4e5d3;
+  border: 1px solid #e4ceb2;
+  border-radius: 999px;
+  padding: 0.22rem 0.55rem;
+  margin-bottom: 0.6rem;
+}
+
+.home-products .assortiment-card h3 {
+  margin-bottom: 0.35rem;
+}
+
+.home-products .assortiment-card p {
+  margin-bottom: 0.7rem;
+  color: var(--text-muted);
+}
+
+.home-products .product-price {
+  margin: 0;
+  color: var(--accent-dark);
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+@media (max-width: 1024px) {
+  .home-products .assortiment-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .home-products .section-head {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .home-products .assortiment-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* ===== Homepage: “Waarom ons” cards met badges ===== */
+.home-why h2 {
+  text-align: center;
+  margin-bottom: 0.4rem;
+}
+
+.home-why-intro {
+  text-align: center;
+  color: var(--text-muted);
+  max-width: 520px;
+  margin: 0 auto 1.4rem;
+}
+
+.home-benefits-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.benefit-premium-card {
+  position: relative;
+  background: #fffdf9;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(56, 36, 23, 0.08);
+  padding: 1.2rem 1.1rem 1.15rem;
+  text-align: left;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.benefit-premium-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 30px rgba(56, 36, 23, 0.12);
+}
+
+.benefit-mark {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  margin-bottom: 0.75rem;
+  background: linear-gradient(145deg, #f6e6d4 0%, #efd3b8 100%);
+  border: 1px solid #e4ceb2;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.65);
+}
+
+.benefit-symbol {
+  font-size: 1.35rem;
+  line-height: 1;
+  color: #8c5a32;
+}
+
+.benefit-premium-card h3 {
+  margin-bottom: 0.45rem;
+}
+
+.benefit-premium-card p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.98rem;
+}
+
+@media (max-width: 900px) {
+  .home-benefits-grid {
+    grid-template-columns: 1fr;
+  }
+}
