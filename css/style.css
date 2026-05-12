@@ -712,3 +712,152 @@ background: #F7E8D0;
     height: 210px;
   }
 }
+/* ===== Assortiment page refresh ===== */
+.assortiment-hero {
+  background: linear-gradient(180deg, #fcf6ee 0%, #f6efe4 100%);
+  border-bottom: 1px solid var(--line);
+  padding: 2.8rem 0 2.3rem;
+}
+
+.assortiment-hero-inner {
+  max-width: 760px;
+}
+
+.assortiment-hero h1 {
+  font-size: clamp(2rem, 3.8vw, 2.9rem);
+  margin-bottom: 0.55rem;
+}
+
+.assortiment-hero p {
+  color: var(--text-muted);
+  margin-bottom: 0;
+}
+
+.assortiment-section {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+}
+
+.category-head {
+  margin-bottom: 1.1rem;
+}
+
+.category-head p {
+  color: var(--text-muted);
+  max-width: 760px;
+  margin-bottom: 0;
+}
+
+.assortiment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1rem;
+}
+
+.assortiment-grid-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.assortiment-card {
+  background: #fffdf9;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(56, 36, 23, 0.08);
+  overflow: hidden;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.assortiment-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 14px 30px rgba(56, 36, 23, 0.12);
+}
+
+.assortiment-card img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  display: block;
+}
+
+.assortiment-card-body {
+  padding: 0.95rem 1rem 1.05rem;
+}
+
+.product-label {
+  display: inline-block;
+  font-size: 0.74rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #7a522c;
+  background: #f4e5d3;
+  border: 1px solid #e4ceb2;
+  border-radius: 999px;
+  padding: 0.22rem 0.55rem;
+  margin-bottom: 0.6rem;
+}
+
+.assortiment-card h3 {
+  margin-bottom: 0.35rem;
+}
+
+.assortiment-card p {
+  margin-bottom: 0.7rem;
+  color: var(--text-muted);
+}
+
+.product-price {
+  margin: 0;
+  color: var(--accent-dark);
+  font-weight: 800;
+  font-size: 1.05rem;
+}
+
+.assortiment-cta {
+  padding-top: 2.2rem;
+}
+
+.assortiment-cta-box {
+  background: #fffdf9;
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  box-shadow: 0 10px 26px rgba(56, 36, 23, 0.08);
+  padding: 1.4rem 1.2rem;
+}
+
+.assortiment-cta-box p {
+  color: var(--text-muted);
+}
+
+.assortiment-cta-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.7rem;
+  margin-top: 0.4rem;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .assortiment-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .assortiment-grid-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  .assortiment-hero {
+    padding: 2.1rem 0 1.8rem;
+  }
+
+  .assortiment-grid,
+  .assortiment-grid-2 {
+    grid-template-columns: 1fr;
+  }
+
+  .assortiment-card-body {
+    padding: 0.9rem 0.9rem 1rem;
+  }
+}
