@@ -74,9 +74,10 @@ h3 { font-size: 1.15rem; }
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(246, 239, 228, 0.96);
+  background: #3A2115;
   backdrop-filter: blur(6px);
-  border-bottom: 1px solid var(--line);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+  box-shadow: 0 8px 24px rgba(58, 33, 21, 0.18);
 }
 
 .nav-wrap {
@@ -87,9 +88,10 @@ h3 { font-size: 1.15rem; }
 }
 
 .logo {
-  color: var(--text);
+  color: #FFF7ED;
   text-decoration: none;
   font-weight: 800;
+  letter-spacing: -0.02em;
 }
 
 .site-nav ul {
@@ -102,7 +104,7 @@ h3 { font-size: 1.15rem; }
 
 .site-nav a {
   text-decoration: none;
-  color: var(--text);
+  color: #F7E8D0;
   font-weight: 600;
   border-bottom: 2px solid transparent;
   padding-bottom: 0.35rem;
@@ -110,8 +112,8 @@ h3 { font-size: 1.15rem; }
 
 .site-nav a:hover,
 .site-nav a.active {
-  color: var(--accent-dark);
-  border-bottom-color: var(--accent);
+  color: #D8A45F;
+  border-bottom-color: #D8A45F;
 }
 
 .nav-toggle {
@@ -129,7 +131,7 @@ h3 { font-size: 1.15rem; }
   width: 22px;
   height: 2px;
   margin: 5px auto;
-  background: var(--text);
+  background: #FFF7ED;
 }
 
 /* Hero */
