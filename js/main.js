@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
   initMobileMenu();
   initFaq();
-  initFormFeedback();
 });
 
 function initMobileMenu() {
@@ -34,18 +33,6 @@ function initFaq() {
 
       button.setAttribute("aria-expanded", String(!expanded));
       faqItem.classList.toggle("open");
-    });
-  });
-}
-
-function initFormFeedback() {
-  const forms = document.querySelectorAll("form");
-  if (!forms.length) return;
-
-  forms.forEach((form) => {
-    form.addEventListener("submit", () => {
-      // Laat de normale Formspree submit doorgaan.
-      // Geen preventDefault gebruiken.
     });
   });
 }
